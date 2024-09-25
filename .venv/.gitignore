@@ -1,0 +1,9 @@
+# macOS 관련 파일
+.DS_Store
+
+# 프로젝트 외부 파일
+../../../*
+
+# IDE 설정 파일
+.idea/
+.vscode/
