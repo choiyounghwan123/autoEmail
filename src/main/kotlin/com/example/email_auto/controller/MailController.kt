@@ -1,7 +1,7 @@
 package com.example.email_auto.controller
 
 import com.example.email_auto.dto.ContentDto
-import com.example.email_auto.service.MailService
+import com.example.email_auto.service.EmailService
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile
 
 @RestController
 @RequestMapping("/api/emails")
-class MailController(private val mailService: MailService) {
+class MailController(private val emailService: EmailService) {
 
     private val logger = LoggerFactory.getLogger(MailController::class.java)
 
@@ -31,9 +31,8 @@ class MailController(private val mailService: MailService) {
             }
         }
 
-        val email:String = "fdgdfgdgf123@icloud.com"
         return try {
-            val success:Boolean = mailService.sendMail(contentDto,email,images)
+            val success:Boolean = emailService.sendMailToAll(contentDto=contentDto, images = images)
             if(success){
                 ResponseEntity.status(HttpStatus.CREATED).body(mapOf("message" to "Email sent successfully"))
             }else{

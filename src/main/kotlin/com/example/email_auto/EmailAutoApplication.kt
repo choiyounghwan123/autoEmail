@@ -8,4 +8,5 @@ class EmailAutoApplication
 
 fun main(args: Array<String>) {
     runApplication<EmailAutoApplication>(*args)
+    args
 }
