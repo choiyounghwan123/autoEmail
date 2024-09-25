@@ -29,6 +29,15 @@
 
 ---
 
+## 📚 구성 요소
+
+이 프로젝트는 여러 기술 스택으로 구성되어 있으며, 각 구성 요소는 별도의 저장소에서 관리됩니다:
+
+- **프론트엔드 (React)**: [pnu-bio-convergence-frontend](https://github.com/choiyounghwan123/pnu-bio-convergence-frontend)
+- **백엔드 (Spring Boot)**: [pnu-bio-convergence-backend](https://github.com/choiyounghwan123/autoEmail)
+- **크롤링 스크립트 (Python)**: [crawling_pnu](https://github.com/choiyounghwan123/crawling_pnu)
+---
+
 ## 🛠️ 주요 기능
 - **홈페이지 공지사항 크롤링**: 파이썬을 이용해 의생명융합공학부 홈페이지의 공지사항을 주기적으로 크롤링합니다.
 - **공지사항 요약**: AI를 활용하여 크롤링된 공지사항을 자동으로 요약합니다.
