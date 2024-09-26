@@ -13,14 +13,13 @@ def load_sent_titles():
     if os.path.exists(TITLE_FILE):
         with open(TITLE_FILE, 'r', encoding='utf-8') as f:
             return set(f.read().splitlines())
-        return set()
+    return set()
 
 def save_sent_title(title):
     with open(TITLE_FILE, 'a', encoding='utf-8') as f:
         f.write(title + '\n')
 
 def crawl():
-    """공지사항을 크롤링하고 텔레그램으로 전송합니다."""
     sent_titles = load_sent_titles()
 
     try:
