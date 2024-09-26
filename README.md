@@ -27,15 +27,7 @@
 
 학부 서버에서 도커로 배포중입니다. 학부 서버 인 관계로 외부접속은 불가합니다(포트 외부 개방 X).
 
----
 
-## 📚 구성 요소
-
-이 프로젝트는 여러 기술 스택으로 구성되어 있으며, 각 구성 요소는 별도의 저장소에서 관리됩니다:
-
-- **프론트엔드 (React)**: [pnu-bio-convergence-frontend](https://github.com/choiyounghwan123/pnu-bio-convergence-frontend)
-- **백엔드 (Spring Boot)**: [pnu-bio-convergence-backend](https://github.com/choiyounghwan123/autoEmail)
-- **크롤링 스크립트 (Python)**: [crawling_pnu](https://github.com/choiyounghwan123/crawling_pnu)
 ---
 
 ## 🛠️ 주요 기능
